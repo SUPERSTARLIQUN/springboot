@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tencent.classroom.mapper.ClassRoomMapper">
+  <resultMap id="BaseResultMap" type="com.tencent.classroom.pojo.ClassRoom">
+    <!--@mbg.generated-->
+    <!--@Table class_room-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <id column="stauts" jdbcType="INTEGER" property="stauts" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="peoples" jdbcType="VARCHAR" property="peoples" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="online" jdbcType="INTEGER" property="online" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, stauts, `name`, description, peoples, `password`, create_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from class_room
+    where id = #{id,jdbcType=INTEGER}
+      and stauts = #{stauts,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    <!--@mbg.generated-->
+    delete from class_room
+    where id = #{id,jdbcType=INTEGER}
+      and stauts = #{stauts,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.tencent.classroom.pojo.ClassRoom">
+    <!--@mbg.generated-->
+    insert into class_room (id, stauts, `name`, 
+      description, peoples, `password`, 
+      create_time)
+    values (#{id,jdbcType=INTEGER}, #{stauts,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, 
+      #{description,jdbcType=VARCHAR}, #{peoples,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.tencent.classroom.pojo.ClassRoom">
+    <!--@mbg.generated-->
+    insert into class_room
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="stauts != null">
+        stauts,
+      </if>
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="peoples != null">
+        peoples,
+      </if>
+      <if test="password != null">
+        `password`,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="stauts != null">
+        #{stauts,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="peoples != null">
+        #{peoples,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.tencent.classroom.pojo.ClassRoom">
+    <!--@mbg.generated-->
+    update class_room
+    <set>
+      <if test="name != null">
+        `name` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="peoples != null">
+        peoples = #{peoples,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        `password` = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+      and stauts = #{stauts,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.tencent.classroom.pojo.ClassRoom">
+    <!--@mbg.generated-->
+    update class_room
+    set `name` = #{name,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR},
+      peoples = #{peoples,jdbcType=VARCHAR},
+      `password` = #{password,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+      and stauts = #{stauts,jdbcType=INTEGER}
+  </update>
+  <select id="findAllClassRoom" resultMap="BaseResultMap">
+        SELECT
+          COUNT( cpm.id ) AS `online`,
+          class_room.id,
+          class_room.`name`,
+          class_room.description,
+          class_room.peoples,
+          class_room.`password`,
+          class_room.create_time,
+          class_room.stauts,
+          `user`.id AS user_id,
+          `user`.`name` AS user_name
+        FROM
+            class_room
+            LEFT JOIN class_people_middle AS cpm ON cpm.class_id = class_room.id
+            LEFT JOIN `user` ON `user`.id  = class_room.user_id
+        GROUP BY
+            cpm.class_id
+  </select>
+</mapper>
