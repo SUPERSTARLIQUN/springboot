@@ -1,0 +1,14 @@
+2020-05-12 23:29:04,155 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 2868 (D:\github项目资源包\springBoot\target\classes started by ThinkPad in D:\github项目资源包\springBoot)
+2020-05-12 23:29:04,155 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-12 23:29:04,170 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-05-12 23:29:06,107 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 2.411 seconds (JVM running for 3.708)
+2020-05-12 23:29:12,915 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-05-12 23:29:12,928 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-12 23:29:12,948 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-05-12 23:29:26,610 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-05-12 23:29:26,611 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-05-12 23:29:26,616 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-05-12 23:53:37,271 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 9884 (D:\github项目资源包\springBoot\target\classes started by ThinkPad in D:\github项目资源包\springBoot)
+2020-05-12 23:53:37,273 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-12 23:53:37,274 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-05-12 23:53:39,529 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 2.766 seconds (JVM running for 3.928)
