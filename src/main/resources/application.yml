@@ -1,12 +1,12 @@
 server:
   port: 8080
   servlet:
-    context-path: /ClassRoom
+    context-path: /demo
 spring:
   datasource:
     username: root
     password: 123456
-    url: jdbc:mysql://localhost:3306/classroom?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/mysql?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
     driver-class-name: com.mysql.jdbc.Driver
     filters: stat
     maxActive: 20
@@ -26,20 +26,16 @@ spring:
     time-zone: GMT+8
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.tencent.classroom.mapper
+  type-aliases-package: com.whkj.project.mapper
 #pagehelper分页插件
 pagehelper:
   helperDialect: mysql
   reasonable: true
   supportMethodsArguments: true
   params: count=countSql
-#设置腾讯云的SDKAPPID与SECRETKEY
-tencent:
-  SDKAPPID: 1400334323
-  SECRETKEY: b1b97305d7a267ac2686d192c716b64052b20348305b235326df9404d5e802a1
-  secretId: AKIDWmywfvo13qNduwCBNL1FC7D6i37vZt6t
-  secretKey: h75KHxMTJstcEL8etrX1EP4Udj5rMaWC
 #logback
 logging:
   config:
    classpath: logback.xml
+pic:
+  resource: D:\resource
