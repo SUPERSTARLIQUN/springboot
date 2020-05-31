@@ -6,16 +6,22 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.2.6.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.tencent</groupId>
-    <artifactId>classroom</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>classroom</name>
-    <description>Demo project for Spring Boot</description>
+    <groupId>com.whkj.project</groupId>
+    <artifactId>SpringBoot</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+    <name>SpringBoot</name>
+    <description>Initial framework project</description>
 
     <properties>
         <java.version>1.8</java.version>
+        <boot.starter.version>1.2.0</boot.starter.version>
+        <httpcomponents.version>4.4.10</httpcomponents.version>
+        <httpclient.version>4.5.6</httpclient.version>
+        <mysql.version>5.1.35</mysql.version>
+        <mybatis.version>3.5.4</mybatis.version>
+        <pagehelper.version>5.1.11</pagehelper.version>
+        <redis.version>3.1.0</redis.version>
     </properties>
 
     <dependencies>
@@ -26,23 +32,17 @@
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>1.2.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20160810</version>
+            <version>${boot.starter.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpcore</artifactId>
-            <version>4.4.10</version>
+            <version>${httpcomponents.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.5.6</version>
+            <version>${httpclient.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.session</groupId>
@@ -51,34 +51,26 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.35</version>
+            <version>${mysql.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.5.4</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper -->
-        <dependency>
-            <groupId>com.tencentcloudapi</groupId>
-            <artifactId>tencentcloud-sdk-java</artifactId>
-            <version>3.0.8</version><!-- 注：这里只是示例版本号，请到 https://mvnrepository.com/artifact/com.tencentcloudapi/tencentcloud-sdk-java 获取最新版本号 -->
+            <version>${mybatis.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
-            <version>3.1.0</version>
+            <version>${redis.version}</version>
         </dependency>
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
-            <version>5.1.11</version>
+            <version>${pagehelper.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
