@@ -27,6 +27,7 @@ spring:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.whkj.project.mapper
+
 #pagehelper分页插件
 pagehelper:
   helperDialect: mysql
@@ -39,3 +40,4 @@ logging:
    classpath: logback.xml
 pic:
   resource: D:\resource
+

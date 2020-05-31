@@ -20,3 +20,7 @@
 2020-05-31 14:13:23,742 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
 2020-05-31 14:13:23,742 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
 2020-05-31 14:13:27,248 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 4.227 seconds (JVM running for 7.831)
+2020-05-31 22:02:07,047 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on SUPPERSTARLIQUN with PID 10432 (D:\项目管理\SpringBoot\target\classes started by liqun in D:\项目管理\SpringBoot)
+2020-05-31 22:02:07,053 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-31 22:02:07,054 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-05-31 22:02:10,710 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 4.721 seconds (JVM running for 8.23)
