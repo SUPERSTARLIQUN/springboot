@@ -26,7 +26,19 @@ public class UserController {
     @GetMapping(value = "/findUserPage")
     @ResponseBody
     public RestResult findUserPage(User user, PageInfo pageInfo){
-       return RestResult.ok("用户查询分页接口");
+        PageInfo userPage = userService.findUserPage(user, pageInfo);
+        return RestResult.ok(userPage);
+    }
+
+
+    /**
+     * reids  CRUD操作
+     * @return
+     */
+    @GetMapping(value = "saveRedis")
+    @ResponseBody
+    public RestResult saveRedis(Integer id){
+        return RestResult.ok(userService.selectByPrimaryKey(id));
     }
 
 }
