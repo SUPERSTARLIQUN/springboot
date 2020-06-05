@@ -19,7 +19,6 @@ public class TestController {
     @GetMapping(value = "/login")
     public RestResult login1(String userName,String password){
         Subject subject = SecurityUtils.getSubject();
-        System.out.println(MD5Util.shiroEncrypt(userName,password));
         subject.login(new UsernamePasswordToken(userName,MD5Util.shiroEncrypt(userName,password)));
         return RestResult.ok("进入登录接口");
     }

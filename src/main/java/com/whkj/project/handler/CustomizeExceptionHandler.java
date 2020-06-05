@@ -7,7 +7,10 @@ import com.whkj.project.utils.RestResult;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.ExcessiveAttemptsException;
 import org.apache.shiro.authz.AuthorizationException;
+import org.apache.shiro.authz.UnauthenticatedException;
+import org.apache.shiro.authz.UnauthorizedException;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
@@ -43,42 +46,6 @@ public class CustomizeExceptionHandler {
     }
 
     /**
-     * 统一处理请求参数校验(普通传参)
-     *
-     * @param e ConstraintViolationException
-     * @return FebsResponse
-     */
-    @ExceptionHandler(value = ConstraintViolationException.class)
-    public RestResult handleConstraintViolationException(ConstraintViolationException e) {
-        StringBuilder message = new StringBuilder();
-        Set<ConstraintViolation<?>> violations = e.getConstraintViolations();
-        for (ConstraintViolation<?> violation : violations) {
-            Path path = violation.getPropertyPath();
-            String[] pathArr = StringUtils.splitByWholeSeparatorPreserveAllTokens(path.toString(), ".");
-            message.append(pathArr[1]).append(violation.getMessage()).append(",");
-        }
-        message = new StringBuilder(message.substring(0, message.length() - 1));
-        return RestResult.build(HttpStatus.BAD_REQUEST.value(),message.toString());
-    }
-
-    /**
-     * 统一处理请求参数校验(json)
-     *
-     * @param e ConstraintViolationException
-     * @return FebsResponse
-     */
-    @ExceptionHandler(MethodArgumentNotValidException.class)
-    public RestResult handlerMethodArgumentNotValidException(MethodArgumentNotValidException e) {
-        StringBuilder message = new StringBuilder();
-        for (FieldError error : e.getBindingResult().getFieldErrors()) {
-            message.append(error.getField()).append(error.getDefaultMessage()).append(",");
-        }
-        message = new StringBuilder(message.substring(0, message.length() - 1));
-        log.error(message.toString(), e);
-        return RestResult.build(HttpStatus.BAD_REQUEST.value(),message.toString());
-    }
-
-    /**
      * Shiro在登录认证过程中，认证失败需要抛出的异常
      * @param e
      * @return
@@ -95,8 +62,16 @@ public class CustomizeExceptionHandler {
      */
     @ExceptionHandler(value = AuthorizationException.class)
     public RestResult handleAuthorizationException(AuthorizationException e) {
+        String message = "" ;
         log.error("用户授权过程中，授权失败!", e.getMessage());
-        return RestResult.build(HttpStatus.METHOD_NOT_ALLOWED.value(),e.getMessage());
+        if (e instanceof UnauthorizedException) {
+            message = "请求的资源的访问是不允许的";
+        }else if(e instanceof UnauthenticatedException){
+            message = "当尚未完成成功认证时，尝试执行授权操作时引发异常";
+        }else{
+            message = e.getMessage();
+        }
+        return RestResult.build(HttpStatus.METHOD_NOT_ALLOWED.value(),message);
     }
 
 

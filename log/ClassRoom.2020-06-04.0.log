@@ -1,0 +1,836 @@
+2020-06-04 10:51:52,459 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 14084 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 10:51:52,462 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 10:51:52,463 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 10:51:55,446 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.488 seconds (JVM running for 4.788)
+2020-06-04 10:52:01,321 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 10:52:01,338 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 10:52:01,350 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 10:52:01,357 ERROR (CustomizeExceptionHandler.java:44)- 用户认证过程中，认证失败!
+2020-06-04 10:52:10,882 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 10:52:10,883 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 10:52:10,887 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 10:52:10,888 ERROR (CustomizeExceptionHandler.java:44)- 用户认证过程中，认证失败!
+2020-06-04 10:53:49,020 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 10828 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 10:53:49,024 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 10:53:49,025 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 10:53:51,545 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.04 seconds (JVM running for 4.124)
+2020-06-04 10:54:05,874 ERROR (CustomizeExceptionHandler.java:33)- 系统内部异常，异常信息
+java.lang.NullPointerException: null
+	at com.whkj.project.utils.MD5Util.getMD5(MD5Util.java:11)
+	at com.whkj.project.controller.TestController.login1(TestController.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2020-06-04 10:56:12,495 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 9716 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 10:56:12,499 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 10:56:12,500 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 10:56:15,435 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.424 seconds (JVM running for 4.516)
+2020-06-04 10:56:25,223 ERROR (CustomizeExceptionHandler.java:33)- 系统内部异常，异常信息
+java.lang.NullPointerException: null
+	at com.whkj.project.utils.MD5Util.getMD5(MD5Util.java:11)
+	at com.whkj.project.controller.TestController.login1(TestController.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2020-06-04 11:05:38,049 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 12136 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 11:05:38,052 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 11:05:38,053 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 11:05:40,890 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.3 seconds (JVM running for 4.454)
+2020-06-04 11:06:01,601 ERROR (CustomizeExceptionHandler.java:33)- 系统内部异常，异常信息
+java.lang.NullPointerException: null
+	at com.whkj.project.utils.MD5Util.getMD5(MD5Util.java:11)
+	at com.whkj.project.controller.TestController.login1(TestController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2020-06-04 11:21:42,614 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 14148 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 11:21:42,617 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 11:21:42,618 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 11:21:45,570 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.465 seconds (JVM running for 4.637)
+2020-06-04 11:22:15,038 ERROR (CustomizeExceptionHandler.java:41)- 系统内部异常，异常信息
+java.lang.NullPointerException: null
+	at com.whkj.project.utils.MD5Util.getMD5(MD5Util.java:11)
+	at com.whkj.project.controller.TestController.login1(TestController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2020-06-04 11:27:47,662 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 13792 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 11:27:47,668 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 11:27:47,669 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 11:27:50,977 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 4.037 seconds (JVM running for 5.868)
+2020-06-04 11:28:01,380 ERROR (CustomizeExceptionHandler.java:41)- 系统内部异常，异常信息
+java.lang.NullPointerException: null
+	at com.whkj.project.utils.MD5Util.getMD5(MD5Util.java:11)
+	at com.whkj.project.controller.TestController.login1(TestController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2020-06-04 11:47:58,007 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 3512 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 11:47:58,010 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 11:47:58,011 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 11:48:01,623 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 4.19 seconds (JVM running for 5.528)
+2020-06-04 11:48:06,373 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 11:48:06,389 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 11:48:06,402 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 11:48:06,408 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 11:48:19,916 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 11:48:19,918 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 11:48:19,919 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 11:48:19,920 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 11:49:28,605 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 7904 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 11:49:28,608 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 11:49:28,608 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 11:49:31,431 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.34 seconds (JVM running for 4.628)
+2020-06-04 11:49:35,621 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 11:49:35,637 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 11:49:35,653 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 11:49:35,660 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 11:50:43,810 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 11:50:43,811 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 11:50:43,814 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 11:51:28,527 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 11:51:52,272 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 9052 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 11:51:52,275 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 11:51:52,276 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 11:51:54,915 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.2 seconds (JVM running for 4.343)
+2020-06-04 11:52:59,537 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 11:52:59,556 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 11:52:59,612 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 11:52:59,634 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 11:53:06,110 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 16332 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 11:53:06,113 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 11:53:06,114 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 11:53:09,151 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.538 seconds (JVM running for 4.912)
+2020-06-04 11:53:19,144 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 11:53:19,160 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 11:53:19,174 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 11:53:19,185 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 13:10:09,532 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:10:09,535 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:10:09,538 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:10:09,539 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 13:12:55,686 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:12:55,687 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:12:55,688 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:12:55,690 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 13:13:41,285 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 14208 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 13:13:41,289 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 13:13:41,289 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 13:13:45,493 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 5.009 seconds (JVM running for 6.718)
+2020-06-04 13:14:14,038 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:14:14,299 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:14:14,523 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:14:24,467 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 13:16:01,591 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:16:01,593 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:16:01,596 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:16:34,851 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 13:17:05,925 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 21416 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 13:17:05,927 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 13:17:05,928 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 13:17:10,114 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 5.127 seconds (JVM running for 7.178)
+2020-06-04 13:17:22,368 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:17:22,659 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:17:22,856 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:17:47,102 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 13:17:52,567 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:17:52,569 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:17:52,570 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:17:54,518 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:17:54,523 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:17:54,525 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:17:55,209 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:17:55,210 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:17:55,211 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:18:49,509 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 19548 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 13:18:49,513 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 13:18:49,514 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 13:18:53,818 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 5.105 seconds (JVM running for 7.036)
+2020-06-04 13:18:57,632 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:18:57,673 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:18:57,707 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:18:57,731 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 13:19:16,144 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:19:16,147 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:19:16,153 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:19:16,159 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 13:21:15,590 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 10872 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 13:21:15,594 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 13:21:15,595 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 13:21:19,409 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 4.599 seconds (JVM running for 6.449)
+2020-06-04 13:21:23,390 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:21:23,404 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:21:23,420 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:21:23,433 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 13:21:58,795 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:21:58,800 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:21:58,803 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:21:58,804 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 13:22:06,554 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 21576 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 13:22:06,556 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 13:22:06,557 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 13:22:10,192 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 4.346 seconds (JVM running for 6.026)
+2020-06-04 13:22:37,676 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:22:37,971 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:22:38,155 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:23:39,620 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 13:26:48,801 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 14696 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 13:26:48,804 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 13:26:48,805 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 13:26:52,169 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 4.016 seconds (JVM running for 5.371)
+2020-06-04 13:27:00,571 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 10020 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 13:27:00,575 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 13:27:00,576 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 13:27:03,670 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.654 seconds (JVM running for 4.965)
+2020-06-04 13:27:10,277 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:27:10,294 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:27:10,306 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:31:02,338 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 18112 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 13:31:02,340 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 13:31:02,341 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 13:31:05,288 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.504 seconds (JVM running for 4.701)
+2020-06-04 13:31:08,652 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:31:08,671 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:31:08,687 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:31:08,696 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 13:31:22,599 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:31:22,601 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:31:22,602 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:32:01,458 ERROR (CustomizeExceptionHandler.java:41)- 系统内部异常，异常信息
+java.lang.IllegalStateException: No cache could be resolved for 'Builder[public com.whkj.project.entity.User com.whkj.project.service.serviceImpl.UserServiceImpl.selectByPrimaryKey(java.lang.Integer)] caches=[] | key='#p0.id' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='',false,false' using resolver 'org.springframework.cache.interceptor.SimpleCacheResolver@5f32cfb'. At least one cache should be provided per cache operation.
+	at org.springframework.cache.interceptor.CacheAspectSupport.getCaches(CacheAspectSupport.java:255)
+	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.<init>(CacheAspectSupport.java:707)
+	at org.springframework.cache.interceptor.CacheAspectSupport.getOperationContext(CacheAspectSupport.java:265)
+	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.<init>(CacheAspectSupport.java:598)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.whkj.project.service.serviceImpl.UserServiceImpl$$EnhancerBySpringCGLIB$$907d0a57.selectByPrimaryKey(<generated>)
+	at com.whkj.project.controller.UserController.saveRedis(UserController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2020-06-04 13:33:54,614 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 13020 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 13:33:54,618 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 13:33:54,619 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 13:33:57,859 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.849 seconds (JVM running for 5.067)
+2020-06-04 13:34:03,523 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:34:03,537 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:34:03,548 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:34:05,652 ERROR (CustomizeExceptionHandler.java:41)- 系统内部异常，异常信息
+java.lang.IllegalStateException: No cache could be resolved for 'Builder[public com.whkj.project.entity.User com.whkj.project.service.serviceImpl.UserServiceImpl.selectByPrimaryKey(java.lang.Integer)] caches=[] | key='#p0.id' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='',false,false' using resolver 'org.springframework.cache.interceptor.SimpleCacheResolver@6e46a59e'. At least one cache should be provided per cache operation.
+	at org.springframework.cache.interceptor.CacheAspectSupport.getCaches(CacheAspectSupport.java:255)
+	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.<init>(CacheAspectSupport.java:707)
+	at org.springframework.cache.interceptor.CacheAspectSupport.getOperationContext(CacheAspectSupport.java:265)
+	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContexts.<init>(CacheAspectSupport.java:598)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.whkj.project.service.serviceImpl.UserServiceImpl$$EnhancerBySpringCGLIB$$946556e9.selectByPrimaryKey(<generated>)
+	at com.whkj.project.controller.UserController.saveRedis(UserController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2020-06-04 13:41:18,589 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 8324 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 13:41:18,593 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 13:41:18,594 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 13:41:21,284 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.282 seconds (JVM running for 4.564)
+2020-06-04 13:41:26,649 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 13:41:26,667 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 13:41:26,680 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 13:41:29,220 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select id, username, `password` from user where id = ? 
+2020-06-04 13:41:29,221 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-06-04 13:41:29,222 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:03:25,879 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 18544 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 14:03:25,883 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 14:03:25,884 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 14:03:29,140 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.778 seconds (JVM running for 5.112)
+2020-06-04 14:03:34,948 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 14:03:34,962 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 14:03:34,976 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:04:10,449 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select id, username, `password` from user where id = ? 
+2020-06-04 14:04:10,451 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-06-04 14:04:10,453 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:04:42,809 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 22348 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 14:04:42,813 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 14:04:42,814 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 14:04:45,426 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.209 seconds (JVM running for 4.455)
+2020-06-04 14:04:52,333 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 14:04:52,347 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 14:04:52,359 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:08:18,168 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 10776 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 14:08:18,171 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 14:08:18,172 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 14:08:21,428 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.879 seconds (JVM running for 5.243)
+2020-06-04 14:08:28,648 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 14:08:28,666 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 14:08:28,681 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:09:06,561 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select id, username, `password` from user where id = ? 
+2020-06-04 14:09:06,562 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-06-04 14:09:06,564 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:10:25,143 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 12196 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 14:10:25,148 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 14:10:25,148 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 14:10:27,939 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.321 seconds (JVM running for 4.447)
+2020-06-04 14:10:32,500 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 14:10:32,518 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 14:10:32,534 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:10:35,558 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-06-04 14:10:35,559 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-06-04 14:10:35,559 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:10:57,393 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select id, username, `password` from user where id = ? 
+2020-06-04 14:10:57,394 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-06-04 14:10:57,395 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:11:01,847 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select id, username, `password` from user where id = ? 
+2020-06-04 14:11:01,848 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-06-04 14:11:01,849 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:11:55,674 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 14:11:55,675 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 14:11:55,676 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:12:04,857 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 19744 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 14:12:04,861 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 14:12:04,862 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 14:12:07,790 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.456 seconds (JVM running for 4.642)
+2020-06-04 14:12:20,937 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 14:12:20,955 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 14:12:20,971 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:12:20,981 ERROR (CustomizeExceptionHandler.java:88)- 用户认证过程中，认证失败!
+2020-06-04 14:12:30,078 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 14:12:30,078 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 14:12:30,079 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:12:39,755 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select id, username, `password` from user where id = ? 
+2020-06-04 14:12:39,756 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-06-04 14:12:39,756 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:12:50,865 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select id, username, `password` from user where id = ? 
+2020-06-04 14:12:50,865 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-06-04 14:12:50,866 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:12:53,075 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select id, username, `password` from user where id = ? 
+2020-06-04 14:12:53,075 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-06-04 14:12:53,076 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:12:58,473 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-06-04 14:12:58,474 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-06-04 14:12:58,475 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:13:01,210 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-06-04 14:13:01,211 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-06-04 14:13:01,213 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:13:12,470 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-06-04 14:13:12,471 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-06-04 14:13:12,472 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:13:30,509 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-06-04 14:13:30,510 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-06-04 14:13:30,520 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:13:46,640 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select id, username, `password` from user where id = ? 
+2020-06-04 14:13:46,641 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-06-04 14:13:46,643 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:14:11,736 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select id, username, `password` from user where id = ? 
+2020-06-04 14:14:11,737 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-06-04 14:14:11,738 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:14:17,245 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select id, username, `password` from user where id = ? 
+2020-06-04 14:14:17,245 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-06-04 14:14:17,246 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:14:21,251 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select id, username, `password` from user where id = ? 
+2020-06-04 14:14:21,252 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-06-04 14:14:21,253 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:14:41,806 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-06-04 14:14:41,807 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-06-04 14:14:41,808 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:14:47,275 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-06-04 14:14:47,275 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-06-04 14:14:47,276 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:14:52,398 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-06-04 14:14:52,400 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-06-04 14:14:52,405 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:14:53,430 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-06-04 14:14:53,431 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-06-04 14:14:53,431 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:16:24,709 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 20812 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 14:16:24,713 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 14:16:24,714 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 14:16:27,524 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.376 seconds (JVM running for 4.494)
+2020-06-04 14:16:42,447 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 14:16:42,471 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 14:16:42,490 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:16:44,381 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-06-04 14:16:44,382 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-06-04 14:16:44,383 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:16:51,004 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-06-04 14:16:51,005 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-06-04 14:16:51,006 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:16:52,503 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-06-04 14:16:52,504 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-06-04 14:16:52,505 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:16:53,371 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-06-04 14:16:53,371 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-06-04 14:16:53,373 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:19:32,911 INFO (StartupInfoLogger.java:55)- Starting springBootApplication on DESKTOP-LCULKOV with PID 11948 (D:\github项目资源包\SpringBoot\target\classes started by ThinkPad in D:\github项目资源包\SpringBoot)
+2020-06-04 14:19:32,915 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-06-04 14:19:32,915 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-06-04 14:19:35,679 INFO (StartupInfoLogger.java:61)- Started springBootApplication in 3.279 seconds (JVM running for 4.348)
+2020-06-04 14:19:47,054 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT username, password FROM `user` WHERE username = ? 
+2020-06-04 14:19:47,077 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: admin(String)
+2020-06-04 14:19:47,095 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:19:54,398 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-06-04 14:19:54,399 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-06-04 14:19:54,400 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-06-04 14:19:55,653 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM user 
+2020-06-04 14:19:55,654 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-06-04 14:19:55,655 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
