@@ -31,7 +31,7 @@ public class UserController {
      */
     @GetMapping(value = "/findUserPage")
     @ResponseBody
-    @RequiresPermissions(value = "user:add1",logical = Logical.OR)
+    @RequiresPermissions(value = "user:add",logical = Logical.OR)
     public RestResult findUserPage(User user, PageInfo pageInfo){
         PageInfo userPage = userService.findUserPage(user, pageInfo);
         return RestResult.ok(userPage);
