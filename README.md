@@ -1,6 +1,7 @@
 # SpringBoot V1.0版本初始框架
 
-**项目技术：**SpringBoot  Shiro   Mybatis  Mysql
+**项目技术：**
+	SpringBoot  Shiro   Mybatis  Mysql
 
 **资源地址：**
 
