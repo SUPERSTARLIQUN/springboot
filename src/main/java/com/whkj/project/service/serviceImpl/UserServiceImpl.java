@@ -39,6 +39,7 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
+    @Cacheable(value = "CacheEvict")
     public User selectByPrimaryKey(Integer id) {
         redisUtils.set(id.toString(),"我是一个神枪手",50);
         return userMapper.selectByPrimaryKey(id);
@@ -60,8 +61,8 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    @Cacheable(cacheNames = "userInfo")
     public PageInfo findUserPage(User user, PageInfo pageInfo) {
+        System.out.println(" CacheEvict 有请求过来了");
         PageHelper.startPage(pageInfo.getPageNum(),pageInfo.getPageSize());
         List<User> userPage = userMapper.findUserPage(user);
         return new PageInfo(userPage);

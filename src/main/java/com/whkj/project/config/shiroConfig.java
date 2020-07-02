@@ -1,6 +1,8 @@
 package com.whkj.project.config;
 
 import lombok.extern.slf4j.Slf4j;
+
+import org.apache.shiro.session.mgt.SessionManager;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
@@ -63,10 +65,12 @@ public class shiroConfig {
      * 创建DefaultWebSecurityManager
      */
     @Bean(name="securityManager")
-    public DefaultWebSecurityManager getDefaultWebSecurityManager(@Qualifier("MyRealm")MyRealm myRealm){
+    public DefaultWebSecurityManager getDefaultWebSecurityManager(@Qualifier("MyRealm")MyRealm myRealm,@Qualifier("MySessionManager")MySessionManager mySessionManager){
         DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
         //关联realm
         securityManager.setRealm(myRealm);
+        //关联MySessionManager
+        securityManager.setSessionManager(mySessionManager);
         return securityManager;
     }
 
@@ -77,6 +81,18 @@ public class shiroConfig {
     @Bean(name="MyRealm")
     public MyRealm getRealm(){
         return new MyRealm();
+    }
+
+
+
+    /**
+     * 自定义sessionManager
+     * @param securityManager
+     * @return
+     */
+    @Bean(name="MySessionManager")
+    public SessionManager SessionManager(){
+        return new MySessionManager();
     }
 
 
